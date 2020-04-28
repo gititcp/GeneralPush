@@ -19,7 +19,7 @@ import com.umeng.message.entity.UMessage;
  * @name
  * @desc
  */
-public class BaseAppliacation extends Application {
+public class BaseApplication extends Application {
 
     @Override
     public void onCreate() {

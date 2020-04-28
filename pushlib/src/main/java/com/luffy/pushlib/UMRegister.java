@@ -2,7 +2,6 @@ package com.luffy.pushlib;
 
 import android.content.Context;
 
-import com.umeng.commonsdk.UMConfigure;
 import com.umeng.message.IUmengRegisterCallback;
 import com.umeng.message.MsgConstant;
 import com.umeng.message.PushAgent;
@@ -22,8 +21,6 @@ public class UMRegister {
 
     public static PushAgent umPushAgent(Context context) {
         PushAgent mPushAgent;
-        //设置LOG开关，默认为false
-        UMConfigure.setLogEnabled(true);
         mPushAgent = PushAgent.getInstance(context);
         PushAgent.getInstance(context).onAppStart();
         mPushAgent.setNoDisturbMode(23, 0, 7, 0);//SDK默认在“23:00”到“7:00”之间收到通知消息时不响铃，不振动，不闪灯
