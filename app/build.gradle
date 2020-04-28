@@ -15,11 +15,6 @@ android {
             abiFilters 'armeabi-v7a'
         }
     }
-    sourceSets {
-        main {
-            jniLibs.srcDirs = ['libs']
-        }
-    }
     /**构建类型-配置*/
     buildTypes {
         debug {
