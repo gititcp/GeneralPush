@@ -51,6 +51,7 @@ dependencies {
     compileOnly rootProject.ext.supportLibs
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     api files('libs/umeng-push-6.0.1.jar')
+    api files('libs/umeng-common-2.2.5.jar')
     /** 小米推送 */
     implementation 'com.umeng.sdk:push-xiaomi:1.0.0'
     /** 华为推送 */
