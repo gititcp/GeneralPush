@@ -2,7 +2,6 @@ package com.luffy.pushlib;
 
 import android.content.Context;
 
-import com.umeng.commonsdk.UMConfigure;
 import com.umeng.message.IUmengRegisterCallback;
 import com.umeng.message.MsgConstant;
 import com.umeng.message.PushAgent;
@@ -21,8 +20,6 @@ import org.android.agoo.xiaomi.MiPushRegistar;
 public class UMRegister {
 
     public static PushAgent umPushAgent(Context context) {
-        //设置LOG开关，默认为false
-        UMConfigure.setLogEnabled(true);
         PushAgent mPushAgent;
         mPushAgent = PushAgent.getInstance(context);
         PushAgent.getInstance(context).onAppStart();
