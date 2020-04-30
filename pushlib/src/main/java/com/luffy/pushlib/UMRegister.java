@@ -20,6 +20,7 @@ import org.android.agoo.xiaomi.MiPushRegistar;
 public class UMRegister {
 
     public static PushAgent umPushAgent(Context context) {
+        // 1.0.5
         PushAgent mPushAgent;
         mPushAgent = PushAgent.getInstance(context);
         PushAgent.getInstance(context).onAppStart();

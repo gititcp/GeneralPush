@@ -33,11 +33,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    sourceSets {
-        main {
-            jniLibs.srcDirs = ['libs']
-        }
-    }
     /**构建时关闭错误或者警告提示 */
     lintOptions {
         checkReleaseBuilds false
