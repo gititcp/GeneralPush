@@ -47,5 +47,4 @@ dependencies {
     implementation rootProject.ext.supportLibs
     /** pushlib */
     implementation project(':pushlib')
-    implementation files('libs\\umeng-common-2.2.5.jar')
 }
