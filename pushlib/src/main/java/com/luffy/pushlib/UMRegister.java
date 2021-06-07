@@ -20,14 +20,14 @@ import org.android.agoo.xiaomi.MiPushRegistar;
 public class UMRegister {
 
     public static PushAgent umPushAgent(Context context) {
-        // 1.0.9
-        PushAgent mPushAgent;
-        mPushAgent = PushAgent.getInstance(context);
+        // 1.1.0
+        PushAgent mPushAgent = PushAgent.getInstance(context);
         PushAgent.getInstance(context).onAppStart();
         mPushAgent.setNoDisturbMode(23, 0, 7, 0);//SDK默认在“23:00”到“7:00”之间收到通知消息时不响铃，不振动，不闪灯
         mPushAgent.setNotificationPlaySound(MsgConstant.NOTIFICATION_PLAY_SERVER); //声音
         mPushAgent.setNotificationPlayLights(MsgConstant.NOTIFICATION_PLAY_SERVER);//呼吸灯
         mPushAgent.setNotificationPlayVibrate(MsgConstant.NOTIFICATION_PLAY_SERVER);//振动
+        mPushAgent.setDisplayNotificationNumber(3);// 通知栏可以设置最多显示通知的条数，当通知栏显示数目大于设置值，此时再有新通知到达时，会把旧的一条通知隐藏
         return mPushAgent;
     }
 
